@@ -1,0 +1,111 @@
+// Fuentes
+
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+// Variables
+
+$white: #fff;
+$title: "Big Shoulders Display",
+cursive;
+$font-family: "Lexend Deca",
+sans-serif;
+$font-size: 1rem;
+$em: 1em;
+
+// Valores generales
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $white;
+}
+
+body {
+    font-family: $font-family;
+    background-color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container p {
+    font-size: $font-size / 1.1;
+}
+
+.card-one {
+    width: $em * 18;
+    background-color: hsl(31, 77%, 52%);
+    padding: $em * 2.5;
+    border-radius: $em $em 0 0;
+}
+
+.card-two {
+    width: $em * 18;
+    background-color: hsl(184, 100%, 22%);
+    padding: $em * 2.5;
+}
+
+.card-three {
+    width: $em * 18;
+    background-color: hsl(179, 100%, 13%);
+    padding: $em * 2.5;
+    border-radius: 0 0 $em $em;
+}
+
+h1 {
+    color: $white;
+    font-family: $title;
+    padding: $em 0;
+}
+
+input {
+    padding: $em $em * 2;
+    display: block;
+    margin: auto;
+    margin-top: $em * 7;
+    background: $white;
+    border: $em / 6 solid $white;
+    color: hsl(31, 77%, 52%);
+    cursor: pointer;
+    border-radius: $em * 2;
+}
+
+.card-two input {
+    color: hsl(184, 100%, 22%);
+}
+
+.card-three input {
+    color: hsl(179, 100%, 13%);
+}
+
+input:hover {
+    background: transparent;
+    border: $em / 6 solid $white;
+    color: $white;
+    transition: 250ms;
+}
+
+@media (min-width: 900px) {
+
+    body {
+        height: 100vh;
+
+    }
+    .card-one {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .card-three {
+        border-radius: 0 8px 8px 0;
+    }
+
+    .card-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 90vh;
+    }
+}
